@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Con_Matrix_four_models' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='AdaBoost_confusion_matrix' inline='true' name='federated.047w7sv060sqoy100n28n1etohe8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AdaBoost_confusion_matrix' name='textscan.0x6vsg70v1gks60zv633a1p73rtv'>
+            <connection class='textscan' directory='C:/Projects/insurance_fraud' filename='AdaBoost_confusion_matrix.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0x6vsg70v1gks60zv633a1p73rtv' name='AdaBoost_confusion_matrix.csv' table='[AdaBoost_confusion_matrix#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Pred_N' ordinal='0' />
+            <column datatype='integer' name='Pred_Y' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AdaBoost_confusion_matrix.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pred_N</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pred_N]</local-name>
+            <parent-name>[AdaBoost_confusion_matrix.csv]</parent-name>
+            <remote-alias>Pred_N</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AdaBoost_confusion_matrix.csv_D216C1394CE945A180EE252E6639F3F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pred_Y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pred_Y]</local-name>
+            <parent-name>[AdaBoost_confusion_matrix.csv]</parent-name>
+            <remote-alias>Pred_Y</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[AdaBoost_confusion_matrix.csv_D216C1394CE945A180EE252E6639F3F6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Pred N' datatype='integer' name='[Pred_N]' role='measure' type='quantitative' />
+      <column caption='Pred Y' datatype='integer' name='[Pred_Y]' role='measure' type='quantitative' />
+      <column caption='AdaBoost_confusion_matrix.csv' datatype='table' name='[__tableau_internal_object_id__].[AdaBoost_confusion_matrix.csv_D216C1394CE945A180EE252E6639F3F6]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/srisr/AppData/Local/Temp/TableauTemp/#TableauTemp_0n22jur17k31fx1dn05ak1wrbwxo.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/13/2025 09:12:27 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Pred_N</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pred_N]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pred_N</remote-alias>
+              <ordinal>0</ordinal>
+              <family>AdaBoost_confusion_matrix.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AdaBoost_confusion_matrix.csv_D216C1394CE945A180EE252E6639F3F6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pred_Y</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pred_Y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pred_Y</remote-alias>
+              <ordinal>1</ordinal>
+              <family>AdaBoost_confusion_matrix.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AdaBoost_confusion_matrix.csv_D216C1394CE945A180EE252E6639F3F6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='AdaBoost_confusion_matrix.csv' id='AdaBoost_confusion_matrix.csv_D216C1394CE945A180EE252E6639F3F6'>
+            <properties context=''>
+              <relation connection='textscan.0x6vsg70v1gks60zv633a1p73rtv' name='AdaBoost_confusion_matrix.csv' table='[AdaBoost_confusion_matrix#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Pred_N' ordinal='0' />
+                  <column datatype='integer' name='Pred_Y' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='model_predictions_tableau' inline='true' name='federated.1x9b5j51wrdper1crciwp0he3dbo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='model_predictions_tableau' name='textscan.1kq4zmw0ym2clq1gue75n0wk71b3'>
+            <connection class='textscan' directory='C:/Projects/insurance_fraud' filename='model_predictions_tableau.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[AdaBoost Pred]' />
+            <value name='[CatBoost Pred]' />
+            <value name='[RandomForest Pred]' />
+            <value name='[XGBoost Pred]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[model_predictions_tableau.csv].[AdaBoost_Pred]' />
+              <field name='[model_predictions_tableau.csv].[CatBoost_Pred]' />
+              <field name='[model_predictions_tableau.csv].[RandomForest_Pred]' />
+              <field name='[model_predictions_tableau.csv].[XGBoost_Pred]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1kq4zmw0ym2clq1gue75n0wk71b3' name='model_predictions_tableau.csv' table='[model_predictions_tableau#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='Actual' ordinal='0' />
+              <column datatype='string' name='RandomForest_Pred' ordinal='1' />
+              <column datatype='string' name='AdaBoost_Pred' ordinal='2' />
+              <column datatype='string' name='XGBoost_Pred' ordinal='3' />
+              <column datatype='string' name='CatBoost_Pred' ordinal='4' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[model_predictions_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Actual]</local-name>
+            <parent-name>[model_predictions_tableau.csv]</parent-name>
+            <remote-alias>Actual</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Model' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Prediction' datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+      <column caption='model_predictions_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/srisr/AppData/Local/Temp/TableauTemp/#TableauTemp_0pcu3g90qbasrg11s0rof1jennkp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/13/2025 09:25:58 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Actual</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Actual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Actual</remote-alias>
+              <ordinal>0</ordinal>
+              <family>model_predictions_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='model_predictions_tableau.csv' id='model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='string' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[AdaBoost Pred]' />
+                  <value name='[CatBoost Pred]' />
+                  <value name='[RandomForest Pred]' />
+                  <value name='[XGBoost Pred]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[model_predictions_tableau.csv].[AdaBoost_Pred]' />
+                    <field name='[model_predictions_tableau.csv].[CatBoost_Pred]' />
+                    <field name='[model_predictions_tableau.csv].[RandomForest_Pred]' />
+                    <field name='[model_predictions_tableau.csv].[XGBoost_Pred]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.1kq4zmw0ym2clq1gue75n0wk71b3' name='model_predictions_tableau.csv' table='[model_predictions_tableau#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='string' name='Actual' ordinal='0' />
+                    <column datatype='string' name='RandomForest_Pred' ordinal='1' />
+                    <column datatype='string' name='AdaBoost_Pred' ordinal='2' />
+                    <column datatype='string' name='XGBoost_Pred' ordinal='3' />
+                    <column datatype='string' name='CatBoost_Pred' ordinal='4' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='model_predictions_tableau' name='federated.1x9b5j51wrdper1crciwp0he3dbo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x9b5j51wrdper1crciwp0he3dbo'>
+            <column datatype='string' name='[Actual]' role='dimension' type='nominal' />
+            <column caption='Model' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Prediction' datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC:qk]' pivot='key' type='quantitative' />
+            <column caption='model_predictions_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC]' role='measure' type='quantitative' />
+            <column-instance column='[Actual]' derivation='None' name='[none:Actual:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:Pivot Field Names:nk]' value='126' />
+            <format attr='width' field='[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:Pivot Field Values:nk]' value='196' />
+            <format attr='height' field='[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:Actual:nk]' value='73' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1x9b5j51wrdper1crciwp0he3dbo].[__tableau_internal_object_id__].[cnt:model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1x9b5j51wrdper1crciwp0he3dbo].[__tableau_internal_object_id__].[cnt:model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC:qk]' />
+              <text column='[federated.1x9b5j51wrdper1crciwp0he3dbo].[__tableau_internal_object_id__].[cnt:model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:Actual:nk]</rows>
+        <cols>([federated.1x9b5j51wrdper1crciwp0he3dbo].[none:Pivot Field Names:nk] / [federated.1x9b5j51wrdper1crciwp0he3dbo].[none:Pivot Field Values:nk])</cols>
+      </table>
+      <simple-id uuid='{C4AF1D79-BB75-43CA-A6DA-B2D9339A0097}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AdaBoost_confusion_matrix' name='federated.047w7sv060sqoy100n28n1etohe8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.047w7sv060sqoy100n28n1etohe8'>
+            <column caption='Pred N' datatype='integer' name='[Pred_N]' role='measure' type='quantitative' />
+            <column caption='Pred Y' datatype='integer' name='[Pred_Y]' role='measure' type='quantitative' />
+            <column caption='AdaBoost_confusion_matrix.csv' datatype='table' name='[__tableau_internal_object_id__].[AdaBoost_confusion_matrix.csv_D216C1394CE945A180EE252E6639F3F6]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[AdaBoost_confusion_matrix.csv_D216C1394CE945A180EE252E6639F3F6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:AdaBoost_confusion_matrix.csv_D216C1394CE945A180EE252E6639F3F6:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pred_N]' derivation='Sum' name='[sum:Pred_N:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pred_Y]' derivation='Sum' name='[sum:Pred_Y:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.047w7sv060sqoy100n28n1etohe8].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.047w7sv060sqoy100n28n1etohe8].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.047w7sv060sqoy100n28n1etohe8].[Multiple Values]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.047w7sv060sqoy100n28n1etohe8].[sum:Pred_Y:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.047w7sv060sqoy100n28n1etohe8].[Multiple Values]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.047w7sv060sqoy100n28n1etohe8].[sum:Pred_N:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.047w7sv060sqoy100n28n1etohe8].[Multiple Values]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.047w7sv060sqoy100n28n1etohe8].[sum:Pred_Y:qk] + [federated.047w7sv060sqoy100n28n1etohe8].[sum:Pred_N:qk])</cols>
+      </table>
+      <simple-id uuid='{364DD840-2B9D-4E92-BBBD-EAA8B7A1F419}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1x9b5j51wrdper1crciwp0he3dbo].[__tableau_internal_object_id__].[cnt:model_predictions_tableau.csv_563F083F3A804BF4BD2E937796086DDC:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:Actual:nk]</field>
+            <field>[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:AdaBoost_Pred:nk]</field>
+            <field>[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:CatBoost_Pred:nk]</field>
+            <field>[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:Pivot Field Names:nk]</field>
+            <field>[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:Pivot Field Values:nk]</field>
+            <field>[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:RandomForest_Pred:nk]</field>
+            <field>[federated.1x9b5j51wrdper1crciwp0he3dbo].[none:XGBoost_Pred:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{222952B3-E882-401B-9815-B21E1853FDD6}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.047w7sv060sqoy100n28n1etohe8].[Multiple Values]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{925E59E0-109F-40D5-AA63-6286E4A59810}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='87' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
