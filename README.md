@@ -1,6 +1,6 @@
 # Insurance Fraud Detection & Model Performance Analysis
 
-## 📌 Project Overview
+##  Project Overview
 This project focuses on detecting fraudulent insurance claims using four distinct **machine learning models**. The core of the project is to not only train these models but to then visually compare their predictive performance in a clear and interactive **Tableau** visualization.
 
 The workflow was divided into two main stages:
@@ -16,7 +16,7 @@ The workflow was divided into two main stages:
 
 ---
 
-## ⚙️ Machine Learning Pipeline
+##  Machine Learning Pipeline
 ### Data Preprocessing
 - Handled missing values and encoded categorical variables using one-hot encoding.
 - Dropped unique identifier columns (`policy_number`, etc.) to prevent data leakage during training.
@@ -28,11 +28,11 @@ The workflow was divided into two main stages:
 - **XGBoost Classifier**
 - **CatBoost Classifier**
 
-> ✅ The final predictions from all four models were exported to a single file for a direct head-to-head comparison in Tableau.
+> The final predictions from all four models were exported to a single file for a direct head-to-head comparison in Tableau.
 
 ---
 
-## 📊 Tableau Visualization
+##  Tableau Visualization
 To make the model performance results **interpretable and easy to compare**, the predictions were visualized in Tableau. The dashboard focuses on one key component:
 
 ### Comparative Confusion Matrix Heatmap
