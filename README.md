@@ -46,3 +46,11 @@ A single, powerful visualization that places the confusion matrix for each of th
 - **Tooltips:** Hovering over any cell in the heatmaps reveals the exact count and model name, allowing for detailed inspection of performance metrics.
 - **Filtering:** The view can be easily filtered to isolate and analyze the performance of a single model.
 
+---
+
+##  Key Findings & Analysis
+A critical insight from this project was the performance difference between the models on an imbalanced dataset.
+
+- **Model Failure Diagnosis:** The initial Random Forest model completely failed to predict fraud (0.00 Recall). The Tableau visualization clearly showed this, as it was missing a "Predicted Fraud" column. This is a classic symptom of the model taking a "lazy" approach on an imbalanced dataset, learning only to predict the majority class ("Not Fraud").
+
+- **Superior Model Performance:** In contrast, the boosting models (AdaBoost, XGBoost, and especially CatBoost) were more resilient. **CatBoost** emerged as the superior model, successfully identifying the highest number of fraud cases (Recall of 0.40) while also being the most precise.
